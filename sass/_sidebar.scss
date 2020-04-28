@@ -1,0 +1,70 @@
+.sidebar {
+    background-color: #fcfce1;
+    height: 100vh;
+    width: 15%;
+    padding: 3rem;
+    color: #808080;
+
+    position: fixed;
+    top:0;
+    left:0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__name {
+        font-size: 5.5rem;
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    &__nav {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    &__illustration {
+        margin-bottom: 1rem;
+        font-family: 'Comic Neue', cursive;
+        text-transform: uppercase;
+        text-decoration: underline;
+        font-size: 1.5rem;
+    }
+
+    &__list {
+        margin-bottom: 3rem;
+        list-style-type: square;
+        list-style-position: inside;
+        &-item {
+            font-size: 1.5rem;
+
+            &:hover {
+                color: black;
+                transform: scale(1.05);
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__about {
+        font-family: 'Comic Neue', cursive;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+
+        &:hover {
+            color: black;
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+    }
+
+    &__social-media {
+        text-align: center;
+
+        &__icon {
+            width: 2rem;
+        }
+
+    }
+}
