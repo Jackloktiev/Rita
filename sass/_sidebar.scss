@@ -1,9 +1,11 @@
 .sidebar {
-    background-color: #fcfce1;
+    //background-color: #fcfce1;
+    background-color: #fff;
     height: 100vh;
     width: 15%;
-    padding: 3rem;
     color: #808080;
+
+    
 
     position: fixed;
     top:0;
@@ -13,20 +15,46 @@
     flex-direction: column;
     justify-content: space-between;
 
+    
+
+    @media only screen and (max-width: 56.25em) {
+        width: 25%;
+    }
+
+    @media only screen and (max-width: 31.875em) {
+        position: static;
+        height: auto;
+        width: 100%;
+        transition: all .3s;
+
+        &:focus div{
+            display: block;
+            height: 100%;
+            
+        }
+    }
+
     &__name {
-        font-size: 5.5rem;
+        font-size: 4rem;
         text-align: center;
-        font-family: 'Dancing Script', cursive;
+        font-family: 'Open Sans Condensed', sans-serif;
+        margin-top: 3rem;
     }
 
     &__nav {
         font-size: 2rem;
         text-align: center;
+        margin: 0 auto;
+
+        @media only screen and (max-width: 31.875em) {
+            display: none;
+            height: 0;
+        }
     }
 
     &__illustration {
         margin-bottom: 1rem;
-        font-family: 'Comic Neue', cursive;
+        font-family: 'Open Sans Condensed', sans-serif;
         text-transform: uppercase;
         text-decoration: underline;
         font-size: 1.5rem;
@@ -61,9 +89,15 @@
 
     &__social-media {
         text-align: center;
+        margin-bottom: 3rem;
+
+        @media only screen and (max-width: 31.875em) {
+            display: none;
+            height: 0;
+        }
 
         &__icon {
-            width: 2rem;
+            width: 3rem;
         }
 
     }
